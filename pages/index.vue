@@ -1,73 +1,58 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        regenschori-editor
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <div class="row">
+      <div class="col-sm-9">
+
+        <h2 class="mt-3">Skladby</h2>
+
+        <div class="insight-wrapper material-shadow">
+
+          <insight title="Uvedení autora" color="#112362"></insight>
+
+          <insight title="Štítky" color="#00498D"></insight>
+
+          <insight title="Text" color="#00486f"></insight>
+
+          <insight title="Akordy" color="#0070AD"></insight>
+
+          <insight title="Noty (LilyPond)" color="#149ae2"></insight>
+
+        </div>
+
+        <h2 class="mt-4">Materiály</h2>
+
+        <div class="insight-wrapper material-shadow">
+          <insight title="Skladby s doplněnou nahrávkou"></insight>
+        </div>
+
+
       </div>
+
+      <div class="col-sm-3">
+        <profile />
+
+      </div>
+
+
     </div>
+
   </div>
 </template>
 
 <script>
-export default {}
+import Insight from "@/pages/index/Insight";
+import Profile from "@/pages/index/Profile";
+
+export default {
+  components: {Profile, Insight}
+}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+.insight-wrapper {
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  padding:       2em;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  border-radius: 5px;
 }
 </style>
