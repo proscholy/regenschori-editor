@@ -1,8 +1,8 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <a class="navbar-brand"
-         href="#">Rozhraní pro doplňování</a>
+         href="#">REGENSCHORI - rozhraní pro doplňování</a>
       <button class="navbar-toggler"
               type="button"
               data-toggle="collapse"
@@ -15,24 +15,6 @@
       <div class="collapse navbar-collapse"
            id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link"
-               href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-               href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link"
-               href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled"
-               href="#"
-               tabindex="-1"
-               aria-disabled="true">Disabled</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -50,11 +32,19 @@
 
 body {
   font-family: "Nunito", Arial, sans-serif;
+
+  margin-top: 95px;
 }
 
 
 .navbar {
   margin-bottom: 20px;
+
+  /*padding: .5rem ;*/
+  z-index: 200;
+  background-color: #112362;
+  min-height: 66px;
+  font-family: Nunito,sans-serif;
 }
 
 

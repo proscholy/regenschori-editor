@@ -1,32 +1,24 @@
 <template>
-  <div class="row my-3 align-items-center">
+  <div class="row align-items-center">
     <div class="col-6">
-      <!--      <p class="mb-2 title">{{ title }}</p>-->
 
-      <!--      <div class="progress">-->
-      <!--        <div class="progress-bar progress-bar-striped"-->
-      <!--             role="progressbar"-->
-      <!--             style="width: 10%"-->
-      <!--             aria-valuenow="10"-->
-      <!--             aria-valuemin="0"-->
-      <!--             aria-valuemax="100"></div>-->
-      <!--      </div>-->
+      <p class="mb-2 title">{{ title }}</p>
 
       <div class="progress rounded"
-           style="height: 35px">
+           style="height: 26px">
         <div class="progress-bar rounded"
              role="progressbar"
              :style="'width: 45%; background-color:' + color"
              aria-valuenow="25"
              aria-valuemin="0"
-             aria-valuemax="100"><span>{{ title }} <b style="float: right; padding-right: 20px;">45%</b></span></div>
+             aria-valuemax="100"><span><b style="float: right; padding-right: 20px;">45%</b></span></div>
       </div>
     </div>
-    <div class="col-3">
+    <div class="col-3 text-right">
       <span class="small">Zbývá doplnit 45 záznamů</span>
     </div>
     <div class="col-3">
-      <div class="btn btn-success rounded py-2 px-4">Doplnit</div>
+      <nuxt-link class="btn btn-success rounded py-2 px-4" to="author">Doplnit</nuxt-link>
     </div>
   </div>
 </template>
@@ -42,6 +34,13 @@ export default {
 </script>
 
 <style scoped>
+
+.row {
+  padding:       18px 0;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
 
 .title {
   font-weight: 600;
@@ -64,11 +63,7 @@ export default {
 }
 
 
-.progress-bar {
-  /*background-image: linear-gradient(to right top, #112362, #0d3676, #054989, #005c9b, #0070ad);*/
-
-
-}
+.progress-bar {}
 
 
 .btn-success {

@@ -2,20 +2,26 @@
   <div>
     <div class="row">
       <div class="col-sm-9">
+        Pomocí tohoto rozhraní lze doplňovat obsah do databáze Regenschori.cz.
 
         <h2 class="mt-3">Skladby</h2>
 
         <div class="insight-wrapper material-shadow">
 
-          <insight title="Uvedení autora" color="#112362"></insight>
+          <insight title="Autor"
+                   color="#112362"></insight>
 
-          <insight title="Štítky" color="#00498D"></insight>
+          <insight title="Štítky"
+                   color="#00498D"></insight>
 
-          <insight title="Text" color="#00486f"></insight>
+          <insight title="Text"
+                   color="#00486f"></insight>
 
-          <insight title="Akordy" color="#0070AD"></insight>
+          <insight title="Akordy"
+                   color="#0070AD"></insight>
 
-          <insight title="Noty (LilyPond)" color="#149ae2"></insight>
+          <insight title="Noty (LilyPond)"
+                   color="#149ae2"></insight>
 
         </div>
 
@@ -29,7 +35,7 @@
       </div>
 
       <div class="col-sm-3">
-        <profile />
+        <profile/>
 
       </div>
 
@@ -51,7 +57,7 @@ export default {
 <style>
 .insight-wrapper {
 
-  padding:       2em;
+  padding:       0 2em;
 
   border-radius: 5px;
 }
